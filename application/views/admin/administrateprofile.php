@@ -19,9 +19,9 @@ Except the loading of display data, all the call are made with ajax and the resu
 			</div>
 			</h2>
 			<ul class="profile-list">
-				<li>First login : <span class="lead"><?php echo $data['firstlogin'];?></span></li>
-				<li>Last login : <span class="lead"><?php echo $data['lastlogin'];?></span></li>
-				<li>Last ip : <span class="lead"><?php echo $data['lastip'];?></span></li>
+				<li>Erster Login: <span class="lead"><?php echo $data['firstlogin'];?></span></li>
+				<li>Letzter Login: <span class="lead"><?php echo $data['lastlogin'];?></span></li>
+				<li>Letzte IP: <span class="lead"><?php echo $data['lastip'];?></span></li>
 			</ul>
 		</div>
 	</div>
@@ -32,14 +32,14 @@ Except the loading of display data, all the call are made with ajax and the resu
 	<div class="panel <?php if(empty($data['bans'])) {echo "panel-info";} else {echo "panel-warning";}?>">
 		<div class="panel-heading clearfix">
 		<?php if(empty($data['bans'])) {?>
-			<h4 class="panel-title pull-left"  style="padding-top: 7.5px;"><strong>Ban list</strong> - This player was never banned !</h4>
+			<h4 class="panel-title pull-left"  style="padding-top: 7.5px;"><strong>Ban Liste</strong> - Dieser Spieler wurde niemals gebannt!</h4>
 			<a class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#ban_modal">Ban</a>
 		</div>
 		<?php }else{?>
 			<h4 class="panel-title pull-left"  style="padding-top: 7.5px;">
 			<a href="#" onclick="deployPanel('ban_table');">
 			<span class="glyphicon glyphicon-arrow-down" style="color: gold;"></span></a>
-			<strong>Ban list</strong>
+			<strong>Ban Liste</strong>
 			</h4>
 			<a class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#ban_modal">Ban</a>
 		</div>
@@ -48,13 +48,13 @@ Except the loading of display data, all the call are made with ajax and the resu
 				<thead>
 					<tr class="default">
 						<th>Server</th>
-						<th>Reason</th>
+						<th>Grund</th>
 						<th>Staff</th>
-						<th>Date</th>
-						<th>State</th>
-						<th>Unban date</th>
-						<th>Unban staff</th>
-						<th>Unban reason</th>
+						<th>Datum</th>
+						<th>Status</th>
+						<th>Unban Datum</th>
+						<th>Unban Staff</th>
+						<th>Unban Grund</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -105,13 +105,13 @@ Except the loading of display data, all the call are made with ajax and the resu
 			<thead>
 				<tr class="default">
 					<th>Server</th>
-					<th>Reason</th>
+					<th>Grund</th>
 					<th>Staff</th>
-					<th>Date</th>
-					<th>State</th>
-					<th>Unmute date</th>
-					<th>Unmute staff</th>
-					<th>Unmute reason</th>
+					<th>Datum</th>
+					<th>Status</th>
+					<th>Unmute Datum</th>
+					<th>Unmute Staff</th>
+					<th>Unmute Grund</th>
 					<th>Action</th>
 				</tr>
 			</thead>
@@ -163,9 +163,9 @@ Except the loading of display data, all the call are made with ajax and the resu
 			<thead>
 				<tr class="default">
 					<th>Server</th>
-					<th>Reason</th>
+					<th>Grund</th>
 					<th>Staff</th>
-					<th>Date</th>
+					<th>Datum</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -204,9 +204,9 @@ Except the loading of display data, all the call are made with ajax and the resu
 			<thead>
 				<tr class="default">
 					<th>Type</th>
-					<th>Reason</th>
+					<th>Grund</th>
 					<th>Staff</th>
-					<th>Date</th>
+					<th>Datum</th>
 				</tr>
 			</thead>
 			<tbody>

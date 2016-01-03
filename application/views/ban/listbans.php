@@ -1,40 +1,40 @@
 <form class="form-inline">
 <h1 style="text-align: center;">
-<span style="text-decoration: underline;">Ban list</span> - Sorted by
+<span>Ban Liste</span> - Sortierung
 <select class="form-control selectSortBy">
 	<option value="player" <?php if($this->getSortingColumn() == "player")
-		echo"selected='selected'"; ?>>player</option>
+		echo"selected='selected'"; ?>>Spieler</option>
 	<option value="server" <?php if($this->getSortingColumn() == "server")
-		echo"selected='selected'"; ?>>server</option>
+		echo"selected='selected'"; ?>>Server</option>
 	<option value="reason" <?php if($this->getSortingColumn() == "reason")
-		echo"selected='selected'"; ?>>reason</option>
+		echo"selected='selected'"; ?>>Grund</option>
 	<option value="staff" <?php if($this->getSortingColumn() == "staff")
-		echo"selected='selected'"; ?>>staff</option>
+		echo"selected='selected'"; ?>>Staff</option>
 	<option value="date" <?php if($this->getSortingColumn() == "date")
-		echo"selected='selected'"; ?>>date</option>
+		echo"selected='selected'"; ?>>Datum</option>
 	<option value="state" <?php if($this->getSortingColumn() == "state")
-		echo"selected='selected'"; ?>>state</option>
+		echo"selected='selected'"; ?>>Status</option>
 	<option value="unban_date" <?php if($this->getSortingColumn() == "unban_date")
-		echo"selected='selected'"; ?>>unban date</option>
+		echo"selected='selected'"; ?>>Unban Datum</option>
 	<option value="unban_staff" <?php if($this->getSortingColumn() == "unban_staff")
-		echo"selected='selected'"; ?>>unban staff</option>
+		echo"selected='selected'"; ?>>Unban Staff</option>
 	<option value="unban_reason" <?php if($this->getSortingColumn() == "unban_reason")
-		echo"selected='selected'"; ?>>unban reason</option>
+		echo"selected='selected'"; ?>>Unban Grund</option>
 </select>
 </h1>
 </form>
 <table class="table table-bat">
 <thead>
 <tr>
-<th>Player</th>
+<th>Spieler</th>
 <th>Server</th>
-<th>Reason</th>
+<th>Grund</th>
 <th>Staff</th>
-<th>Date</th>
-<th>State</th>
-<th>Unban date</th>
-<th>Unban staff</th>
-<th>Unban reason</th>
+<th>Datum</th>
+<th>Status</th>
+<th>Unban datum</th>
+<th>Unban Staff</th>
+<th>Unban Grund</th>
 </tr>
 </thead>
 <tbody>

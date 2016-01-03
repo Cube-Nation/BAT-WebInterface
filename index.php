@@ -22,6 +22,7 @@ if($debugMode){
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
 }
+
 if($increaseMemoryLimit){
 	ini_set('memory_limit', '16M');
 }
@@ -56,4 +57,10 @@ $controller->executeAction();
 
 if($debugMode){
 	echo "<h3><center>Peak memory usage:" . floor((memory_get_peak_usage() / 1024)) . "Kb</center></h3>";
+}
+
+
+
+function abc() {
+
 }

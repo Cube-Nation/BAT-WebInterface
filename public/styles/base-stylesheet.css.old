@@ -9,58 +9,17 @@ This file has two parts :
 body {
     padding-top: 0px;
 }
-
 bady {
-    padding-top: 0px;
+    padding-top: 500px;
 }
-
 body, .jumbotron p {
     font-family: 'TrebuchetSansMS', sans-serif;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0, 8);
-}
-
-.container {
-    margin-bottom: 55px;
-}
-
-/* unvisited link */
-a:link {
-    color: #3ca819;
-}
-
-/* visited link */
-a:visited {
-    color: #3ca819;
-}
-
-/* mouse over link */
-a:hover {
-    color: #3ca819;
-}
-
-/* selected link */
-a:active {
-    color: #3ca819;
+	background-color: rgba(255, 255, 255, 0,8);
 }
 
 td, th {
     text-align: center;
-}
-
-.jumbotron h1 {
-    color:#46C31D;
-}
-
-.home {
-    text-align: center;
-}
-.jumbotron p {
-    font-size: 20px;
-}
-
-.Footer p {
-    font-size: 12px;
 }
 
 .table-bat tbody tr td, .valign tbody tr td {
@@ -80,41 +39,15 @@ td, th {
 /* 2nd part => Below this line, the CSS may include color into the design */
 body {
 
-    background-image: url("../../img/bg.png");
-    background-attachment: fixed;
+    background-image: url("/img/bg.png");
+	background-attachment:fixed;
 
-}
-
-.header {
-    background: #9e8f6a;
-    width: 100%;
-    position: relative;
-    padding: 0px;
-    min-height: 170px;
-}
-
-.inner {
-    width: 1200px;
-    float: center;
-    z-index: 1;
-    position: relative;
-    padding: 0px;
-    margin: auto;
-}
-
-.banner {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    background: url("../../img/cnbanner.png") no-repeat left top;
-    width: 547px;
-    min-height: 150px;
 }
 
 .navbar-bat {
-    font-size: 1.2em;
-    font-family: 'Droid Sans', Arial, Tahoma;
-    font-weight: bold;
+	font-size: 1.2em;
+	font-family: 'Droid Sans', Arial, Tahoma;
+        font-weight: bold;
 }
 
 /* Navigation bar customization */
@@ -130,18 +63,22 @@ body {
 }
 
 .navbar-bat * {
-    color: #ffffff;
+    color: #49b113;
+	
 
 }
 
-.nav li a:hover {
-    background-color: transparent;
-    text-decoration: underline;
+.navbar-bat .nav li.active, .navbar-bat .nav li a:hover {
+    background: #ceefbe;
+    color: #49b113;
 }
 
-.nav li a {
-    color: #ffffff;
+.navbar-bat .nav li.display-only a:hover {
+    background: #7b623c;
+    color: #49b113;
+
 }
+
 
 /* Table customization : colours and rounded borders */
 .table-bat {
@@ -223,37 +160,4 @@ table tbody tr.warning td.danger-bat {
 
 li .lead {
     font-family: 'TrebuchetSansMS', sans-serif;
-}
-
-.Footertopdunkel {
-    width: 100%;
-    text-align: center;
-    background: #332413;
-    min-height: 55px;
-    clear: both;
-    position: fixed;
-    z-index: 10;
-    bottom: 0;
-}
-
-.Footer {
-    clear: left;
-    padding: 10px 15px;
-    text-align: center;
-    background: #9e8f6a;
-    position: absolute;
-    bottom: 0;
-    width: 100%
-}
-
-.Footer p {
-    font-size: 10px;
-    color: #4f3e27;
-    padding: 0px;
-    margin: 0px;
-}
-
-.Footer a {
-    color: #4f3e27;
-    text-decoration: underline;
 }

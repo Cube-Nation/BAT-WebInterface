@@ -12,8 +12,12 @@
 			</div>
 			</h2>
 			<ul class="profile-list">
-				<li>First login : <span class="lead"><?php echo $data['firstlogin'];?></span></li>
-				<li>Last login : <span class="lead"><?php echo $data['lastlogin'];?></span></li>
+			<table>
+				<tr>
+				<td>Erster Login:</td> <td><?php echo $data['firstlogin'];?></td> <br>
+				</tr>
+				<tr><td align="left">Letzter Login:</td><td><?php echo $data['lastlogin'];?></td></tr>
+				</table>
 			</ul>
 		</div>
 	</div>
@@ -30,14 +34,14 @@
 			<table class="table">
 				<thead>
 				<tr class ="default">
-				<th>Server</th>
-				<th>Reason</th>
-				<th>Staff</th>
-				<th>Date</th>
-				<th>State</th>
-				<th>Unban date</th>
-				<th>Unban staff</th>
-				<th>Unban reason</th>
+					<th>Server</th>
+					<th>Grund</th>
+					<th>Staff</th>
+					<th>Datum</th>
+					<th>Status</th>
+					<th>Unban Datum</th>
+					<th>Unban Staff</th>
+					<th>Unban Grund</th>
 				</tr>
 				</thead>
 				<tbody>
@@ -115,9 +119,9 @@
 				<thead>
 				<tr class ="default">
 				<th>Server</th>
-				<th>Reason</th>
+				<th>Grund</th>
 				<th>Staff</th>
-				<th>Date</th>
+				<th>Datum</th>
 				</tr>
 				</thead>
 				<tbody>
@@ -147,9 +151,9 @@
 			<table class="table">
 				<thead>
 				<tr class ="default">
-				<th>Reason</th>
+				<th>Grund</th>
 				<th>Staff</th>
-				<th>Date</th>
+				<th>Datum</th>
 				</tr>
 				</thead>
 				<tbody>

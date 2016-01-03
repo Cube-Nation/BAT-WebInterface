@@ -1,6 +1,6 @@
 <form class="form-inline">
 <h1 style="text-align: center;">
-<span style="text-decoration: underline;">Comment list</span> - Sorted by
+<span>Comment list</span> - Sorted by
 <select class="form-control selectSortBy">
 	<option value="player" <?php if($this->getSortingColumn() == "player")
 		echo"selected='selected'"; ?>>player</option>

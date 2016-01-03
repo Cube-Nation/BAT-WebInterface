@@ -1,6 +1,6 @@
 <form class="form-inline">
 <h1 style="text-align: center;">
-<span style="text-decoration: underline;">Mute list</span> - Sorted by
+<span>Mute Liste</span> - Sortierung
 <select class="form-control selectSortBy">
 	<option value="player" <?php if($this->getSortingColumn() == "player")
 		echo"selected='selected'"; ?>>player</option>
@@ -39,7 +39,7 @@
 	</thead>
 	<tbody>
 	<?php
-	if (empty($data)) {echo "<tr><td colspan='100'>There are no mutes.</td></tr>";}
+	if (empty($data)) {echo "<tr><td colspan='100'>Es gibt keine Mutes.</td></tr>";}
 	else{
 	foreach ($data as $entry){
 	$mute = $entry->getData();

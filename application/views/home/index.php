@@ -1,4 +1,4 @@
 <div class="container jumbotron">
-<h1 style="text-align: center; color: navy;"><span style="color: #0099FF;"><?php echo Message::network;?></span> punishment list</h1>
-<p>Hi, welcome to <?php echo Message::network;?> punishment list!</p>
+<h1 class="home"><span><?php echo Message::network;?></span> </h1>
+<p class="home">Hey, Willkommen im Ban-Manager von <?php echo Message::network;?>!</p>
 </div>
